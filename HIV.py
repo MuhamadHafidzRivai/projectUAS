@@ -27,7 +27,7 @@ if st.button('Hasil Prediksi'):
 ]])
 
     if(predik[0] == 1):
-        predik = 'Kemungkinan Pasien terkena Virus HIV'
+        predik = 'Kemungkinan Pasien tidak terkena Virus HIV'
     else:
-        predik = 'Kemungkinan Pasien Tidak terkena Virus HIV'
+        predik = 'Kemungkinan Pasien terkena Virus HIV'
 st.success(predik)
