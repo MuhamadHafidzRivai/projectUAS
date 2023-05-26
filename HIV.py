@@ -30,6 +30,4 @@ if st.button('Hasil Prediksi'):
         predik = 'Kemungkinan Pasien tidak terkena Virus HIV'
     else:
         predik = 'Kemungkinan Pasien terkena Virus HIV'
-         
-    st.write("Model Yang Digunakan Memiliki Tingkat Akurasi ", (score*100), "%")
 st.success(predik)
