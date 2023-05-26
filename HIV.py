@@ -25,9 +25,13 @@ if st.button('Hasil Prediksi'):
     predik = model.predict([[Age, Marital_Staus, STD, Educational_Background, HIV_TEST_IN_PAST_YEAR, 
                              AIDS_education, Places_of_seeking_sex_partners, SEXUAL_ORIENTATION, Drug_taking
 ]])
+      score = score
+      st.info("Prediksi Sukses...")
 
     if(predik[0] == 1):
         predik = 'Kemungkinan Pasien tidak terkena Virus HIV'
     else:
         predik = 'Kemungkinan Pasien terkena Virus HIV'
+         
+    st.write("Model Yang Digunakan Memiliki Tingkat Akurasi ", (score*100), "%")
 st.success(predik)
